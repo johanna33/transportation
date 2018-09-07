@@ -1,0 +1,28 @@
+unit uConsultaRegistro;
+
+interface
+
+uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
+  Buttons, ExtCtrls;
+
+type
+  TdlgConsultaRegistro = class(TForm)
+    OKBtn: TButton;
+    CancelBtn: TButton;
+    Bevel1: TBevel;
+    lconsultamant: TLabel;
+    eConsultaM: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dlgConsultaRegistro: TdlgConsultaRegistro;
+
+implementation
+
+{$R *.dfm}
+
+end.

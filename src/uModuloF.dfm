@@ -1,0 +1,1163 @@
+object fModuloF: TfModuloF
+  Left = 282
+  Top = 238
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'M'#243'dulo de Facturaci'#243'n'
+  ClientHeight = 533
+  ClientWidth = 1012
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Verdana'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    0000000080000080000000808000800000008000800080800000C0C0C0008080
+    80000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    00000000AA0000AA000000000000000000000000AA0000AA0000000000000000
+    00000000AA0000AA0000000000000000000000AAAAAAAAAAAA00000000000000
+    0000AAAAAAAAAAAAAAAA00000000000000AAAAAAAAAAAAAAAAAAA00000000000
+    00AAAAAAAAAAAAAAAAAAAA000000000000AAAAA0AA0000AAAAAAAA0000000000
+    00AAA000AA0000AA0AAAAAA00000000000AA0000AA0000AA00AAAAA000000000
+    00000000AA0000AA00AAAAA00000000000000000AA0000AA00AAAAA000000000
+    00000000AA0000AA0AAAAAA00000000000000000AA0000AAAAAAAA0000000000
+    000000AAAAAAAAAAAAAAAA00000000000000AAAAAAAAAAAAAAAAA00000000000
+    000AAAAAAAAAAAAAAAAA00000000000000AAAAAAAAAAAAAAAA00000000000000
+    00AAAAAAAA0000AA00000000000000000AAAAAA0AA0000AA0000000000000000
+    0AAAAA00AA0000AA00000000000000000AAAAA00AA0000AA0000000000000000
+    0AAAAA00AA0000AA0000AA00000000000AAAAAA0AA0000AA000AAA0000000000
+    00AAAAAAAA0000AA0AAAAA000000000000AAAAAAAAAAAAAAAAAAAA0000000000
+    000AAAAAAAAAAAAAAAAAAA00000000000000AAAAAAAAAAAAAAAA000000000000
+    000000AAAAAAAAAAAA0000000000000000000000AA0000AA0000000000000000
+    00000000AA0000AA000000000000000000000000AA0000AA000000000000FFF3
+    CFFFFFF3CFFFFFF3CFFFFFC003FFFF0000FFFC00007FFC00003FFC13C03FFC73
+    C81FFCF3CC1FFFF3CC1FFFF3CC1FFFF3C81FFFF3C03FFFC0003FFF00007FFE00
+    00FFFC0003FFFC03CFFFF813CFFFF833CFFFF833CFFFF833CF3FF813CE3FFC03
+    C83FFC00003FFE00003FFF0000FFFFC003FFFFF3CFFFFFF3CFFFFFF3CFFF}
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pModuloF: TPanel
+    Left = 0
+    Top = 0
+    Width = 1012
+    Height = 533
+    Align = alClient
+    TabOrder = 0
+    object lfactN: TLabel
+      Left = 64
+      Top = 32
+      Width = 67
+      Height = 14
+      Caption = 'Fact. Num:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object ldesdeF: TLabel
+      Left = 48
+      Top = 72
+      Width = 86
+      Height = 14
+      Caption = 'Desde Fecha:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lhastaF: TLabel
+      Left = 248
+      Top = 72
+      Width = 83
+      Height = 14
+      Caption = 'Hasta Fecha:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lcliente: TLabel
+      Left = 80
+      Top = 112
+      Width = 49
+      Height = 14
+      Caption = 'Cliente:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lforma: TLabel
+      Left = 440
+      Top = 112
+      Width = 98
+      Height = 14
+      Caption = 'Forma de Fact.:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lfechadia: TLabel
+      Left = 288
+      Top = 32
+      Width = 42
+      Height = 14
+      Caption = 'Fecha:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lpor: TLabel
+      Left = 526
+      Top = 443
+      Width = 13
+      Height = 16
+      Caption = '%'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lporcie: TLabel
+      Left = 376
+      Top = 446
+      Width = 74
+      Height = 14
+      Caption = 'Descuento:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lraya: TLabel
+      Left = 455
+      Top = 440
+      Width = 7
+      Height = 18
+      Caption = '-'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object laumento: TLabel
+      Left = 387
+      Top = 478
+      Width = 63
+      Height = 14
+      Caption = 'Aumento:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lraau: TLabel
+      Left = 452
+      Top = 472
+      Width = 13
+      Height = 18
+      Caption = '+'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lpau: TLabel
+      Left = 526
+      Top = 475
+      Width = 13
+      Height = 16
+      Caption = '%'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 440
+      Top = 32
+      Width = 30
+      Height = 14
+      Caption = 'NCF:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+    end
+    object dbGFactura: TDBGrid
+      Left = 8
+      Top = 136
+      Width = 993
+      Height = 217
+      DataSource = dsOrdenF
+      TabOrder = 0
+      TitleFont.Charset = ANSI_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Verdana'
+      TitleFont.Style = []
+      OnCellClick = dbGFacturaCellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'orden_n'
+          Title.Caption = 'Orden'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'fecha'
+          Title.Caption = 'Fecha'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'capacidad'
+          Title.Caption = 'Cap'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 30
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'capa1'
+          Title.Caption = 'Cap'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 30
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'pax'
+          Title.Caption = 'Pax'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 30
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'pax1'
+          Title.Caption = 'Pax'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 30
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'orden_c'
+          Title.Caption = 'Bono'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 90
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'solicitado'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Verdana'
+          Font.Style = [fsBold]
+          Title.Caption = 'Solicitado'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 90
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'valor_rd'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Verdana'
+          Font.Style = [fsBold]
+          Title.Caption = 'Valor $RD'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 80
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'valor_us'
+          Title.Caption = 'Valor $US'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 80
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'lugar'
+          Title.Caption = 'Ruta'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 350
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'servicio'
+          Title.Caption = 'Servicio'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 350
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'tipo_servicio'
+          Title.Caption = 'Tipo'
+          Title.Font.Charset = ANSI_CHARSET
+          Title.Font.Color = clNavy
+          Title.Font.Height = -11
+          Title.Font.Name = 'Verdana'
+          Title.Font.Style = [fsBold]
+          Width = 100
+          Visible = True
+        end>
+    end
+    object GboxRD: TGroupBox
+      Left = 64
+      Top = 372
+      Width = 265
+      Height = 145
+      Caption = 'Pesos'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clPurple
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      object limporterd: TLabel
+        Left = 20
+        Top = 40
+        Width = 84
+        Height = 14
+        Caption = 'Importe RD$:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        ParentFont = False
+      end
+      object ltotal: TLabel
+        Left = 50
+        Top = 104
+        Width = 51
+        Height = 14
+        Caption = 'Total $:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lraya1: TLabel
+        Left = 16
+        Top = 72
+        Width = 235
+        Height = 14
+        Caption = '-----------------------------------------------'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        ParentFont = False
+      end
+      object eRD: TEdit
+        Left = 112
+        Top = 32
+        Width = 97
+        Height = 22
+        Color = clSilver
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        MaxLength = 10
+        ParentFont = False
+        TabOrder = 0
+        OnChange = eRDChange
+      end
+      object eTotalRD: TEdit
+        Left = 112
+        Top = 96
+        Width = 121
+        Height = 22
+        Color = clGradientInactiveCaption
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+      end
+      object bbOKRD: TBitBtn
+        Left = 216
+        Top = 32
+        Width = 33
+        Height = 25
+        Caption = 'OK'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clPurple
+        Font.Height = -11
+        Font.Name = 'Verdana'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+        OnClick = bbOKRDClick
+      end
+    end
+    object GboxUS: TGroupBox
+      Left = 632
+      Top = 368
+      Width = 329
+      Height = 145
+      Caption = 'D'#243'lares'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clGreen
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      object limporteus: TLabel
+        Left = 44
+        Top = 32
+        Width = 84
+        Height = 14
+        Caption = 'Importe US$:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        ParentFont = False
+      end
+      object ltaza: TLabel
+        Left = 222
+        Top = 104
+        Width = 35
+        Height = 14
+        Caption = 'Taza:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        ParentFont = False
+      end
+      object ltotalus: TLabel
+        Left = 26
+        Top = 104
+        Width = 51
+        Height = 14
+        Caption = 'Total $:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lraya2: TLabel
+        Left = 16
+        Top = 64
+        Width = 305
+        Height = 14
+        Caption = '-------------------------------------------------------------'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        ParentFont = False
+      end
+      object eUS: TEdit
+        Left = 136
+        Top = 24
+        Width = 97
+        Height = 22
+        Color = clSilver
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        MaxLength = 10
+        ParentFont = False
+        TabOrder = 0
+        OnChange = eUSChange
+      end
+      object eTaza: TEdit
+        Left = 264
+        Top = 96
+        Width = 49
+        Height = 22
+        Color = clSilver
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = []
+        MaxLength = 5
+        ParentFont = False
+        TabOrder = 1
+        OnChange = eTazaChange
+      end
+      object eTotalUS: TEdit
+        Left = 88
+        Top = 96
+        Width = 121
+        Height = 22
+        Color = clGradientInactiveCaption
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Verdana'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+      end
+      object bbOKUS: TBitBtn
+        Left = 248
+        Top = 24
+        Width = 33
+        Height = 25
+        Caption = 'OK'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clGreen
+        Font.Height = -11
+        Font.Name = 'Verdana'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+        OnClick = bbOKUSClick
+      end
+    end
+    object bbAceptarF: TBitBtn
+      Left = 424
+      Top = 376
+      Width = 105
+      Height = 41
+      Caption = 'Aceptar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clGreen
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      OnClick = bbAceptarFClick
+      Glyph.Data = {
+        5A0B0000424D5A0B00000000000036000000280000001E0000001F0000000100
+        180000000000240B000000000000000000000000000000000000C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C080
+        8080808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C08080808080808080
+        80808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0008000008000008000808080808080
+        808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0
+        C0C0C0C0C0C0C0C0C0C000800000800000800000800000800080808080808080
+        8080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C000FF000080000080000080000080000080000080008080808080808080
+        80808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C000FF0000
+        8000008000008000008000008000008000008000008000808080808080808080
+        808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C000FF000080000080
+        0000800000800000800000800000800000800000800080808080808080808080
+        8080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C000FF00008000008000008000
+        0080000080000080000080000080000080000080008080808080808080808080
+        80C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C000FF0000800000800000800000800000
+        8000008000008000008000008000008000008000808080808080808080C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C00000C0C0C0C0C0C000FF000080000080000080000080000080000080
+        00008000008000008000008000008000008000808080808080808080C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C000FF0000800000800000800000800000800000FF0000FF00
+        008000008000008000008000008000808080808080808080808080C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0
+        C0C0C0C000FF0000800000800000800000800000800080808000FF0000FF0000
+        8000008000008000008000008000808080808080808080C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C000FF0000800000800000800000800080808080808000FF0000FF000080
+        00008000008000008000008000808080808080808080C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0
+        C0C000FF0000FF00008000008000808080808080C0C0C000FF0000FF00008000
+        008000008000008000008000808080808080808080C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C000FF0000FF00008000808080808080C0C0C0C0C0C000FF0000FF0000800000
+        8000008000008000808080808080808080808080C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        00FF0000FF00C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF000080000080
+        00008000008000808080808080808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF00008000008000
+        008000008000808080808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF0000800000800000
+        8000008000808080808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF000080000080000080
+        00808080808080808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF00008000008000008000
+        808080808080808080C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF0000800000800000800080
+        8080808080808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF000080000080000080008080
+        80808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF00008000008000808080808080
+        C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF00008000008000808080C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C000FF0000FF00008000C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000}
+    end
+    object bbSalirF: TBitBtn
+      Left = 888
+      Top = 16
+      Width = 89
+      Height = 25
+      Caption = 'Salir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      OnClick = bbSalirFClick
+      Glyph.Data = {
+        56080000424D5608000000000000360000002800000022000000140000000100
+        1800000000002008000000000000000000000000000000000000C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C00000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C0000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000808080C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000808080C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0000000FFFFFF0000FF0000FF00
+        00FF0000FF0000FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFF
+        0000FF0000FFFFFFFFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF0000
+        00808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0000000FFFF
+        FF0000FF0000FF0000FF0000FF0000FFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFF
+        FFFF0000FFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF0000FF0000FFFFFFFF
+        FFFFFFFFFFFF000000808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C0000000FFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFFFFFFFF0000FF0000
+        FFFFFFFFFFFFFF0000FF0000FFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF00
+        00FF0000FFFFFFFFFFFFFFFFFFFF000000808080C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0000000FFFFFF0000FF0000FF0000FF0000FFFFFFFF
+        FFFFFFFFFFFF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FFFFFF
+        FFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF000000808080C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0000000FFFFFF0000FF0000FF00
+        00FF0000FFFFFFFFFFFFFFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF
+        0000FF0000FFFFFFFFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF0000
+        00808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0000000FFFF
+        FF0000FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF0000FF0000FF00
+        00FFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFFFFFFFFFF0000FF0000FFFFFFFF
+        FFFFFFFFFFFF000000808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C0000000FFFFFF0000FF0000FF0000FF0000FF0000FFFFFFFF0000FF0000
+        FFFFFFFFFFFFFF0000FF0000FFFFFFFF0000FF0000FFFFFFFF0000FF0000FF00
+        00FF0000FF0000FF0000FFFFFFFF000000808080C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0000000FFFFFF0000FF0000FF0000FF0000FF0000FF
+        FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFF0000FF0000FFFFFF
+        FF0000FF0000FF0000FF0000FF0000FF0000FFFFFFFF000000808080C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0000000FFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+        00808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0000000FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFF000000808080C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0
+        C0C0C00000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000808080C0C0C0C0C0C0C0C0C0C0C0C0
+        0000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0808080808080808080808080808080
+        8080808080808080808080808080808080808080808080808080808080808080
+        80808080808080808080808080808080808080808080808080808080C0C0C0C0
+        C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0
+        C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C00000}
+    end
+    object eFactN: TEdit
+      Left = 136
+      Top = 24
+      Width = 105
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object eDesdeF1: TEdit
+      Left = 144
+      Top = 48
+      Width = 89
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object eHastaF1: TEdit
+      Left = 336
+      Top = 48
+      Width = 89
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object eClienteF: TEdit
+      Left = 136
+      Top = 104
+      Width = 289
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object eFormaF: TEdit
+      Left = 544
+      Top = 104
+      Width = 33
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 9
+    end
+    object eFechaDia: TEdit
+      Left = 336
+      Top = 24
+      Width = 89
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 10
+    end
+    object eCodF: TEdit
+      Left = 848
+      Top = 0
+      Width = 33
+      Height = 21
+      TabOrder = 11
+      Visible = False
+    end
+    object eTipoF: TEdit
+      Left = 808
+      Top = 0
+      Width = 33
+      Height = 21
+      TabOrder = 12
+      Visible = False
+    end
+    object eDes: TEdit
+      Left = 464
+      Top = 440
+      Width = 57
+      Height = 22
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      MaxLength = 3
+      ParentFont = False
+      TabOrder = 13
+      OnChange = eDesChange
+    end
+    object eAum: TEdit
+      Left = 464
+      Top = 472
+      Width = 57
+      Height = 22
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = []
+      MaxLength = 3
+      ParentFont = False
+      TabOrder = 14
+      OnChange = eAumChange
+    end
+    object eNCF: TEdit
+      Left = 472
+      Top = 24
+      Width = 225
+      Height = 22
+      Color = clGradientInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 15
+    end
+    object bCamF: TButton
+      Left = 456
+      Top = 65
+      Width = 105
+      Height = 25
+      Caption = 'Cambiar Fecha'
+      TabOrder = 16
+      OnClick = bCamFClick
+    end
+    object eDesdeF: TDateTimePicker
+      Left = 136
+      Top = 72
+      Width = 105
+      Height = 21
+      Date = 40559.618923912040000000
+      Time = 40559.618923912040000000
+      TabOrder = 17
+    end
+    object eHastaF: TDateTimePicker
+      Left = 336
+      Top = 72
+      Width = 113
+      Height = 21
+      Date = 40559.619331921300000000
+      Time = 40559.619331921300000000
+      TabOrder = 18
+    end
+  end
+  object dsOrdenF: TDataSource
+    DataSet = qryFact
+    Left = 928
+    Top = 96
+  end
+  object qryModiO: TMyQuery
+    Connection = fPrincipal.MyConnectT
+    SQL.Strings = (
+      'select * from Ordenservicio')
+    Left = 832
+    Top = 48
+  end
+  object qrySumaRD: TMyQuery
+    Connection = fPrincipal.MyConnectT
+    SQL.Strings = (
+      'select sum(valor_rd) from OrdenServicio')
+    Left = 888
+    Top = 48
+    object qrySumaRDsumvalor_rd: TFloatField
+      FieldName = 'sum(valor_rd)'
+    end
+  end
+  object qrySumaUS: TMyQuery
+    Connection = fPrincipal.MyConnectT
+    SQL.Strings = (
+      'select sum(valor_us) from OrdenServicio')
+    Left = 920
+    Top = 48
+    object qrySumaUSsumvalor_us: TFloatField
+      FieldName = 'sum(valor_us)'
+    end
+  end
+  object qryTotal: TMyQuery
+    Connection = fPrincipal.MyConnectT
+    SQL.Strings = (
+      'select * from Fact')
+    Left = 968
+    Top = 48
+  end
+  object qryFact: TMyQuery
+    Connection = fPrincipal.MyConnectT
+    SQL.Strings = (
+      'select * from OrdenServicio')
+    Left = 968
+    Top = 96
+    object qryFactorden_n: TIntegerField
+      FieldName = 'orden_n'
+    end
+    object qryFactfecha: TDateField
+      FieldName = 'fecha'
+    end
+    object qryFactcapacidad: TIntegerField
+      FieldName = 'capacidad'
+    end
+    object qryFactservicio: TStringField
+      FieldName = 'servicio'
+      Size = 50
+    end
+    object qryFactpax: TIntegerField
+      FieldName = 'pax'
+    end
+    object qryFactsolicitado: TStringField
+      FieldName = 'solicitado'
+    end
+    object qryFactorden_c: TStringField
+      FieldName = 'orden_c'
+    end
+    object qryFactlugar: TStringField
+      FieldName = 'lugar'
+      Size = 60
+    end
+    object qryFactvalor_rd: TFloatField
+      FieldName = 'valor_rd'
+    end
+    object qryFactvalor_us: TFloatField
+      FieldName = 'valor_us'
+    end
+    object qryFactcapa1: TIntegerField
+      FieldName = 'capa1'
+    end
+    object qryFactpax1: TIntegerField
+      FieldName = 'pax1'
+    end
+    object qryFacttipo_servicio: TStringField
+      FieldName = 'tipo_servicio'
+      Size = 9
+    end
+  end
+  object qryCamF: TMyQuery
+    Connection = fPrincipal.MyConnectT
+    SQL.Strings = (
+      'update Fact'
+      'set fdesde=:vfdesde, fhasta=:vfhasta'
+      'where fact_n =:v1fact')
+    Left = 640
+    Top = 53
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'vfdesde'
+      end
+      item
+        DataType = ftUnknown
+        Name = 'vfhasta'
+      end
+      item
+        DataType = ftUnknown
+        Name = 'v1fact'
+      end>
+    object qryCamFfact_n: TIntegerField
+      FieldName = 'fact_n'
+    end
+    object qryCamFncf: TStringField
+      FieldName = 'ncf'
+      Size = 19
+    end
+    object qryCamFfechaR: TDateField
+      FieldName = 'fechaR'
+    end
+    object qryCamFfdesde: TDateField
+      FieldName = 'fdesde'
+    end
+    object qryCamFfhasta: TDateField
+      FieldName = 'fhasta'
+    end
+    object qryCamFtaza: TFloatField
+      FieldName = 'taza'
+    end
+    object qryCamFtotalRD: TFloatField
+      FieldName = 'totalRD'
+    end
+    object qryCamFtotalUS: TFloatField
+      FieldName = 'totalUS'
+    end
+    object qryCamFcodigo_c: TIntegerField
+      FieldName = 'codigo_c'
+    end
+    object qryCamFnombre: TStringField
+      FieldName = 'nombre'
+      Size = 50
+    end
+    object qryCamFstatus: TStringField
+      FieldName = 'status'
+      FixedChar = True
+      Size = 1
+    end
+    object qryCamFforma: TStringField
+      FieldName = 'forma'
+      FixedChar = True
+      Size = 2
+    end
+    object qryCamFtipo: TStringField
+      FieldName = 'tipo'
+      FixedChar = True
+      Size = 1
+    end
+    object qryCamFde: TFloatField
+      FieldName = 'de'
+    end
+    object qryCamFau: TFloatField
+      FieldName = 'au'
+    end
+    object qryCamFvalor: TFloatField
+      FieldName = 'valor'
+    end
+    object qryCamFuser_f: TStringField
+      FieldName = 'user_f'
+      Size = 10
+    end
+  end
+end

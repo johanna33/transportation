@@ -1,0 +1,28 @@
+unit uConsultaChofer;
+
+interface
+
+uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
+  Buttons, ExtCtrls;
+
+type
+  TdlgConsultaChofer = class(TForm)
+    OKBtn: TButton;
+    CancelBtn: TButton;
+    Bevel1: TBevel;
+    lconsultachofer: TLabel;
+    eConsultaCh: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dlgConsultaChofer: TdlgConsultaChofer;
+
+implementation
+
+{$R *.dfm}
+
+end.

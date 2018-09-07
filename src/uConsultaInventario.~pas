@@ -1,0 +1,28 @@
+unit uConsultaInventario;
+
+interface
+
+uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
+  Buttons, ExtCtrls;
+
+type
+  TdlgConsultaInventario = class(TForm)
+    OKBtn: TButton;
+    CancelBtn: TButton;
+    Bevel1: TBevel;
+    lconsultain: TLabel;
+    eConsultaIn: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dlgConsultaInventario: TdlgConsultaInventario;
+
+implementation
+
+{$R *.dfm}
+
+end.

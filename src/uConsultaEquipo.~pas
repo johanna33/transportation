@@ -1,0 +1,28 @@
+unit uConsultaEquipo;
+
+interface
+
+uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
+  Buttons, ExtCtrls;
+
+type
+  TdlgConsultaEquipo = class(TForm)
+    OKBtn: TButton;
+    CancelBtn: TButton;
+    Bevel1: TBevel;
+    lconsultachofer: TLabel;
+    eConsultaF: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dlgConsultaEquipo: TdlgConsultaEquipo;
+
+implementation
+
+{$R *.dfm}
+
+end.
